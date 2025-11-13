@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Apple",
+    "category": "fruit",
+    "price": 4,
+    "image": "https://images.unsplash.com/photo-1708158741910-a9c583d2b0a4"
+  },
+  {
+    "id": 2,
+    "name": "Avocado",
+    "category": "fruit",
+    "price": 3,
+    "image": "https://images.unsplash.com/photo-1651565919334-bf81165cd0a3"
+  },
+  {
+    "id": 3,
+    "name": "Orange",
+    "category": "fruit",
+    "price": 6,
+    "image": "https://images.unsplash.com/photo-1756994701441-bf10959f36ae"
+  },
+  {
+    "id": 4,
+    "name": "Mango",
+    "category": "fruit",
+    "price": 10,
+    "image": "https://images.unsplash.com/photo-1757281096599-b9165ba74008"
+  },
+  {
+    "id": 5,
+    "name": "Tomato",
+    "category": "vegetable",
+    "price": 5,
+    "image": "https://images.unsplash.com/photo-1561155713-50f2a38fde2c"
+  },
+  {
+    "id": 6,
+    "name": "Carrot",
+    "category": "vegetable",
+    "price": 2,
+    "image": "https://images.unsplash.com/photo-1603462903957-566630607cc7"
+  },
+  {
+    "id": 7,
+    "name": "Broccoli",
+    "category": "vegetable",
+    "price": 8,
+    "image": "https://images.unsplash.com/photo-1622271329044-0c1887e33959"
+  },
+  {
+    "id": 8,
+    "name": "Potato",
+    "category": "vegetable",
+    "price": 3,
+    "image": "https://images.unsplash.com/photo-1744659751904-3b2e5c095323"
+  }
+]

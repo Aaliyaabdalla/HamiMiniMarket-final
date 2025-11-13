@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hami MiniMarket</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1><i class="fa-solid fa-carrot"></i> HAMI_</h1>
+    </div>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <nav class="nav-list">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Product</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="cart">
+      <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+      <span id="cart-count">0</span>
+    </div>
+  </header>
+
+   <!--  HERO Section -->
+    <section class="hero">
+        <div class="text">
+            <h1>Fresh Fruits & Vegetables</h1>
+            <p>Healthy food for a better life</p>
+            <button class="btn">Shop Now</button>
+        </div>
+    </section>
+
+  <section class="products">
+    <h2>Our fresh Products</h2>
+    <section class="search-filter">
+      <input type="text" id="search" placeholder="Search for a product..." />
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="fruit">Fruits</option>
+        <option value="vegetable">Vegetables</option>
+      </select>
+
+      <select id="price-filter">
+        <option value="all">All Prices</option>
+        <option value="5">Below $5</option>
+        <option value="10">Below $10</option>
+        <option value="15">Below $15</option>
+      </select>
+    </section>
+  </section>
+
+  <section class="product-list" id="product-list"></section>
+
+  <!-- 🛒 Cart Sidebar -->
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <hr />
+    <div class="cart-summary">
+      <p>Subtotal: $<span id="subtotal">0</span></p>
+      <p>Tax (5%): $<span id="tax">0</span></p>
+      <p>Discount: $<span id="discount">0</span></p>
+      <h3>Total: $<span id="total">0</span></h3>
+      <button id="confirm-order">Confirm Order</button>
+    </div>
+  </aside>
+
+   <section class="about">
+        <div class="left">
+            <img src="./images/about.png" alt="">
+        </div>
+        <div class="right">
+            <h2>About US</h2>
+            <p>Hami Mini Market is a local store dedicated to providing fresh, high-quality fruits and vegetables every
+                day. We are passionate about healthy living and committed to offering our customers the best produce at
+                fair prices. At Hami Mini Market, we believe that freshness and quality should be available to everyone
+                in our community.</p>
+            <button class="btn">View More</button>
+        </div>
+
+
+
+    </section>
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <div class="box">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="subject">
+            <textarea name="Message" cols="40" rows="5">write something...</textarea>
+            <button>Submit</button>
+        </div>
+    </section>
+
+  <footer>
+    <div class="left">
+      <div class="logo">
+        <h1><i class="fa-solid fa-carrot"></i> HAMI_</h1>
+        <h2>Fresh Fruits & Vegetables</h2>
+      </div>
+    </div>
+    <div class="right">
+      <h4>Contact Us:</h4>
+      <div class="icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+  <button id="backToTop">⬆</button>
+
+
+  <script>
+     // Get the button element
+        const backToTopBtn = document.getElementById("backToTop");
+
+        // Show button when user scrolls down
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        // Scroll to top smoothly when clicked
+        backToTopBtn.onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+  </script>
+
+  <script type="module" src="js/product.js"></script>
+  <script type="module" src="js/cart.js"></script>
+  <script type="module" src="js/storage.js"></script>
+  
+
+</body>
+</html>
